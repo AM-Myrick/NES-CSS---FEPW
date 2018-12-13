@@ -12,6 +12,7 @@ const Navigation = props => {
             <div className="btn-container">
                 <NavLink to="/all-notes" className="btn is-success">View Your Notes</NavLink>
                 <NavLink to="/add-note" className="btn is-success">+ Create New Note</NavLink>
+                <NavLink to="/login" className="btn is-success" onClick={() => localStorage.removeItem("access_token")}>Logout</NavLink>
             </div>
         </nav> :
         <nav className="container">
